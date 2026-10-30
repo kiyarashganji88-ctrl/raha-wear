@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Raha Wear | رها ور؛ استایل روزمره و لباس‌های منتخب.">
+<meta name="theme-color" content="#111111">
+<title>Raha Wear | رها ور</title>
+<style>
+:root{--ink:#171717;--cream:#f4efe6;--paper:#fffdfa;--muted:#77736d;--line:#e5dfd5;--gold:#b59a72;--danger:#a62e2e}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:Tahoma,Arial,sans-serif}a{color:inherit;text-decoration:none}button,input,select,textarea{font:inherit}
+.announcement{background:#101010;color:#eee;padding:10px 5%;display:flex;justify-content:space-between;gap:12px;font-size:12px}
+header{background:#111;color:#fff;display:flex;align-items:center;justify-content:space-between;gap:20px;padding:17px 5%;position:sticky;top:0;z-index:10;border-top:1px solid #333}
+.brand{font-family:Georgia,serif;font-size:27px;font-style:italic;white-space:nowrap}.brand small{display:block;font: bold 13px Tahoma;text-align:center;margin-top:4px}
+nav{display:flex;gap:22px;align-items:center;font-size:14px}nav a:hover{color:#d8c4a5}.search{width:min(220px,22vw);padding:10px 13px;border:1px solid #444;border-radius:25px;background:#222;color:#fff;outline:none}
+.hero{min-height:410px;background:linear-gradient(90deg,rgba(0,0,0,.82),rgba(0,0,0,.12)),url('https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=2000&q=85') center 35%/cover;color:#fff;display:flex;align-items:center;padding:50px 8%}
+.hero-copy{max-width:570px}.eyebrow{letter-spacing:3px;font-size:12px;color:#d4c3a9;text-transform:uppercase}.hero h1{font:italic 62px Georgia,serif;direction:ltr;text-align:right;margin:12px 0}.hero h2{font-size:27px;margin:0 0 12px}.hero p{color:#e5e1db;line-height:2}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;border:0;padding:12px 20px;background:var(--cream);color:#111;cursor:pointer;font-weight:bold;border-radius:3px}.btn:hover{background:#dfd1bc}.btn.dark{background:#171717;color:white}.btn.small{padding:8px 12px;font-size:12px}.btn.danger{background:#8d2727;color:#fff}
+.section{padding:40px 5%}.section-head{display:flex;align-items:end;justify-content:space-between;gap:12px;margin-bottom:22px}.section-head h2{margin:0;font-size:23px}.section-head p{margin:7px 0 0;color:var(--muted);font-size:13px;line-height:1.8}
+.categories{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.category{height:210px;position:relative;overflow:hidden;background:#ddd;border-radius:5px;color:#fff}.category img{width:100%;height:100%;object-fit:cover;transition:transform .35s}.category:hover img{transform:scale(1.05)}.category:after{content:"";position:absolute;inset:0;background:linear-gradient(transparent,rgba(0,0,0,.72))}.category span{position:absolute;z-index:1;bottom:17px;right:17px;font-size:18px;font-weight:bold}
+.benefits{display:grid;grid-template-columns:repeat(3,1fr);gap:15px;padding:23px 5%;background:#f4f1eb;text-align:center}.benefit{padding:10px;border-left:1px solid #d6d0c6}.benefit:last-child{border-left:0}.benefit b{display:block;margin-bottom:7px}.benefit small{color:var(--muted)}
+.filters{display:flex;gap:9px;flex-wrap:wrap;margin:0 0 20px}.filters select,.filters input{padding:10px 12px;border:1px solid var(--line);background:white;border-radius:4px;min-width:150px}
+.product-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}.product-card{border:1px solid var(--line);border-radius:5px;overflow:hidden;background:#fff;display:flex;flex-direction:column;min-width:0}.product-image{height:250px;background:#f2eee8;position:relative}.product-image img{width:100%;height:100%;object-fit:cover;display:block}.product-placeholder{height:100%;display:flex;align-items:center;justify-content:center;color:#999;font-size:13px}.stock-tag{position:absolute;top:10px;right:10px;background:#fff;padding:6px 9px;border-radius:3px;font-size:11px}.stock-tag.out{background:#222;color:#fff}.product-info{padding:14px;display:flex;flex-direction:column;gap:8px;flex:1}.product-info h3{font-size:15px;margin:0}.product-meta{font-size:12px;color:var(--muted);line-height:1.8}.price{font-weight:bold;font-size:16px}.product-actions{display:flex;gap:8px;margin-top:auto;padding-top:5px}.product-actions .btn{flex:1}.empty-products{border:1px dashed #c8bba8;padding:30px 20px;text-align:center;background:#faf7f1;border-radius:6px}.empty-products p{color:var(--muted);line-height:1.9}
+.admin{background:#f5f1e9;border-top:1px solid var(--line)}.admin-panel{max-width:1000px;margin:auto;background:#fff;border:1px solid var(--line);border-radius:8px;padding:22px}.admin-note{font-size:13px;color:#6d6253;line-height:1.9;background:#f8f4ec;padding:12px;border-radius:4px;margin-bottom:18px}.form-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:13px}.field{display:flex;flex-direction:column;gap:7px}.field label{font-size:13px;font-weight:bold}.field input,.field select,.field textarea{width:100%;padding:11px;border:1px solid #d8d1c7;border-radius:4px;background:#fff}.field textarea{min-height:70px;resize:vertical}.field.full{grid-column:1/-1}.admin-buttons{display:flex;gap:10px;flex-wrap:wrap;margin-top:17px}.admin-list{display:grid;gap:9px;margin-top:18px}.admin-row{display:flex;align-items:center;justify-content:space-between;gap:10px;border:1px solid var(--line);padding:10px;border-radius:4px}.admin-row small{display:block;color:var(--muted);margin-top:5px}.pill{display:inline-block;border:1px solid #d8cbb9;border-radius:30px;padding:6px 11px;font-size:12px}
+.about{display:grid;grid-template-columns:1.2fr 1fr;gap:30px;align-items:center;background:#151515;color:#fff}.about img{width:100%;height:260px;object-fit:cover}.about p{line-height:2;color:#d4d0ca}
+footer{background:#0e0e0e;color:#fff;padding:30px 5%;display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap}footer p{color:#bbb;font-size:13px;line-height:1.9}.footer-links{display:flex;gap:18px;flex-wrap:wrap;font-size:13px}
+.modal{position:fixed;inset:0;background:#0009;display:none;align-items:center;justify-content:center;padding:20px;z-index:50}.modal.open{display:flex}.modal-box{max-width:520px;width:100%;background:#fff;padding:22px;border-radius:8px;max-height:90vh;overflow:auto}.modal-box h3{margin-top:0}.modal-box img{width:100%;max-height:300px;object-fit:contain;background:#f4f0e8}.modal-close{float:left;border:0;background:transparent;font-size:23px;cursor:pointer}
+@media(max-width:900px){header{flex-wrap:wrap}.brand{font-size:23px}nav{order:3;width:100%;justify-content:center;gap:14px;flex-wrap:wrap}.search{width:170px}.categories{grid-template-columns:repeat(2,1fr)}.product-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.product-image{height:230px}.about{grid-template-columns:1fr}.form-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:520px){.announcement{font-size:10px}.search{width:125px}.hero{min-height:350px;padding:35px 6%}.hero h1{font-size:42px}.hero h2{font-size:22px}.section{padding:30px 4%}.section-head h2{font-size:19px}.categories{gap:9px}.category{height:150px}.category span{font-size:15px;right:12px;bottom:12px}.benefits{grid-template-columns:1fr;gap:4px}.benefit{border-left:0;border-bottom:1px solid #d6d0c6}.benefit:last-child{border-bottom:0}.product-grid{gap:9px}.product-image{height:180px}.product-info{padding:10px}.product-info h3{font-size:13px}.price{font-size:14px}.product-actions{flex-direction:column}.form-grid{grid-template-columns:1fr}.admin-panel{padding:14px}.admin-row{align-items:flex-start;flex-direction:column}}
+</style>
+</head>
+<body>
+<div class="announcement"><span>Raha Wear | رها ور</span><span>مجموعهٔ جدید به‌زودی</span></div>
+<header>
+  <a class="brand" href="#home">Raha Wear <small>رها ور</small></a>
+  <nav aria-label="منوی اصلی"><a href="#home">خانه</a><a href="#categories">دسته‌بندی‌ها</a><a href="#products">محصولات</a><a href="#about">درباره ما</a><a href="#contact">تماس با ما</a></nav>
+  <input id="topSearch" class="search" aria-label="جست‌وجوی محصول" placeholder="جست‌وجوی لباس...">
+</header>
+<main>
+<section class="hero" id="home"><div class="hero-copy"><div class="eyebrow">New season · Raha Wear</div><h1>Raha Wear</h1><h2>رها ور</h2><p>استایل تو، داستان توست.<br>لباس‌های منتخب برای استایل روزمره و خاص تو.</p><a class="btn" href="#products">مشاهده محصولات ←</a></div></section>
+<section class="section" id="categories">
+  <div class="section-head"><div><h2>دسته‌بندی محصولات</h2><p>برای شروع، دسته‌ها را آماده کرده‌ایم.</p></div></div>
+  <div class="categories">
+    <a class="category" href="#products" data-category-link="زنانه"><img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=700&q=80" alt="لباس زنانه"><span>لباس زنانه</span></a>
+    <a class="category" href="#products" data-category-link="مردانه"><img src="https://images.unsplash.com/photo-1523398002811-999ca8dec234?auto=format&fit=crop&w=700&q=80" alt="لباس مردانه"><span>لباس مردانه</span></a>
+    <a class="category" href="#products" data-category-link="ورزشی"><img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&fit=crop&w=700&q=80" alt="لباس ورزشی"><span>لباس ورزشی</span></a>
+    <a class="category" href="#products" data-category-link="روزمره"><img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=700&q=80" alt="لباس روزمره"><span>روزمره و تیشرت</span></a>
+  </div>
+</section>
+<section class="benefits"><div class="benefit"><b>✦ انتخاب با دقت</b><small>محصولات منتخب برای استایل روزمره</small></div><div class="benefit"><b>↗ اطلاعات شفاف</b><small>قیمت و مشخصات هر محصول</small></div><div class="benefit"><b>♡ همراه مشتری</b><small>راه‌های ارتباطی به‌زودی تکمیل می‌شوند</small></div></section>
+<section class="section" id="products">
+  <div class="section-head"><div><h2>محصولات Raha Wear</h2><p>وقتی لباس‌ها رسیدند، مشخصاتشان را از بخش مدیریت اضافه کن.</p></div><span class="pill" id="productCount">۰ محصول</span></div>
+  <div class="filters"><input id="productSearch" placeholder="جست‌وجو در محصولات..."><select id="categoryFilter" aria-label="فیلتر دسته"><option value="">همه دسته‌ها</option><option>زنانه</option><option>مردانه</option><option>ورزشی</option><option>روزمره</option><option>اکسسوری</option></select><select id="stockFilter" aria-label="فیلتر موجودی"><option value="">همه وضعیت‌ها</option><option value="in">موجود</option><option value="out">ناموجود</option></select></div>
+  <div id="productGrid" class="product-grid"></div>
+  <div id="emptyProducts" class="empty-products"><h3>مجموعهٔ جدید Raha Wear در راه است</h3><p>هنوز محصولی اضافه نشده. از بخش مدیریت پایین صفحه، محصول آزمایشی یا محصول واقعی اضافه کن.</p></div>
+</section>
+<section class="section about" id="about"><div><div class="eyebrow">Our story</div><h2>استایل تو، داستان توست.</h2><p>Raha Wear برای ارائهٔ انتخاب‌های ساده و کاربردی برای استایل شخصی ساخته می‌شود. محصولات و اطلاعات فروشگاه به‌مرور تکمیل خواهند شد.</p><a class="btn" href="#contact">ارتباط با ما</a></div><img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&w=1000&q=85" alt="فضای فروشگاه لباس"></section>
+<section class="section admin" id="admin">
+  <div class="admin-panel">
+    <div class="section-head"><div><h2>مدیریت محصولات</h2><p>محصول را اضافه کن تا کارت آن در بخش محصولات نمایش داده شود.</p></div><span class="pill">نسخهٔ آزمایشی</span></div>
+    <div class="admin-note">مهم: این نسخه محصولات را فقط در همین مرورگر و همین دستگاه ذخیره می‌کند. برای اینکه مشتری‌ها هم محصولات را ببینند و سفارش‌ها ثبت شوند، بعداً باید سایت را به پایگاه داده و پنل مدیریت آنلاین وصل کنیم. عکس محصول می‌تواند یک لینک مستقیم تصویر باشد.</div>
+    <form id="productForm">
+      <input type="hidden" id="editId">
+      <div class="form-grid">
+        <div class="field"><label for="name">نام محصول *</label><input id="name" required maxlength="90" placeholder="مثلاً هودی مشکی"></div>
+        <div class="field"><label for="price">قیمت به تومان *</label><input id="price" type="number" min="0" required placeholder="مثلاً 850000"></div>
+        <div class="field"><label for="category">دسته‌بندی *</label><select id="category" required><option value="مردانه">مردانه</option><option value="زنانه">زنانه</option><option value="ورزشی">ورزشی</option><option value="روزمره">روزمره</option><option value="اکسسوری">اکسسوری</option></select></div>
+        <div class="field"><label for="image">لینک عکس محصول</label><input id="image" type="url" placeholder="https://..."></div>
+        <div class="field"><label for="sizes">سایزها</label><input id="sizes" placeholder="مثلاً M، L، XL"></div>
+        <div class="field"><label for="colors">رنگ‌ها</label><input id="colors" placeholder="مثلاً مشکی، کرم"></div>
+        <div class="field"><label for="stock">وضعیت موجودی</label><select id="stock"><option value="in">موجود</option><option value="out">ناموجود</option></select></div>
+        <div class="field full"><label for="description">توضیحات کوتاه</label><textarea id="description" maxlength="400" placeholder="جنس، ویژگی‌ها یا راهنمای انتخاب محصول"></textarea></div>
+      </div>
+      <div class="admin-buttons"><button class="btn dark" type="submit" id="saveButton">ذخیره محصول</button><button class="btn" type="button" id="resetButton">پاک‌کردن فرم</button></div>
+    </form>
+    <div id="adminList" class="admin-list"></div>
+  </div>
+</section>
+</main>
+<footer id="contact"><div><a class="brand" href="#home">Raha Wear <small>رها ور</small></a><p>فروشگاه آنلاین لباس؛ در حال آماده‌سازی.</p></div><div><b>تماس با ما</b><p>اطلاعات تماس و شبکه‌های اجتماعی پس از نهایی‌شدن اضافه می‌شوند.</p><div class="footer-links"><a href="#home">خانه</a><a href="#products">محصولات</a><a href="#admin">مدیریت محصولات</a></div></div></footer>
+<div class="modal" id="productModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle"><div class="modal-box"><button class="modal-close" id="closeModal" aria-label="بستن">×</button><div id="modalContent"></div></div></div>
+<script>
+const STORE_KEY = 'rahaWearProducts_v1';
+let products = [];
+const $ = id => document.getElementById(id);
+const money = n => new Intl.NumberFormat('fa-IR').format(Number(n)||0) + ' تومان';
+const safe = value => String(value ?? '').replace(/[&<>"']/g, ch => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[ch]));
+function loadProducts(){try{const value=localStorage.getItem(STORE_KEY);products=value?JSON.parse(value):[]}catch(e){products=[]}}
+function saveProducts(){localStorage.setItem(STORE_KEY,JSON.stringify(products))}
+function renderProducts(){
+ const query=$('productSearch').value.trim().toLowerCase(), category=$('categoryFilter').value, stock=$('stockFilter').value;
+ const filtered=products.filter(p=>(!query||(p.name+' '+p.category+' '+p.description+' '+p.colors).toLowerCase().includes(query))&&(!category||p.category===category)&&(!stock||p.stock===stock));
+ $('productCount').textContent=new Intl.NumberFormat('fa-IR').format(filtered.length)+' محصول';
+ $('productGrid').innerHTML=filtered.map(p=>`<article class="product-card"><div class="product-image">${p.image?`<img src="${safe(p.image)}" alt="${safe(p.name)}" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">`:''}<div class="product-placeholder" style="${p.image?'display:none':''}">تصویر محصول</div><span class="stock-tag ${p.stock==='out'?'out':''}">${p.stock==='out'?'ناموجود':'موجود'}</span></div><div class="product-info"><h3>${safe(p.name)}</h3><div class="product-meta">${safe(p.category)}${p.sizes?' · سایز: '+safe(p.sizes):''}${p.colors?' · رنگ: '+safe(p.colors):''}</div><div class="price">${money(p.price)}</div><div class="product-actions"><button class="btn dark small" onclick="showProduct('${p.id}')">جزئیات</button></div></div></article>`).join('');
+ $('emptyProducts').style.display=filtered.length?'none':'block';
+ renderAdminList();
+}
+function renderAdminList(){
+ $('adminList').innerHTML=products.length?'<h3>فهرست محصولات ذخیره‌شده</h3>'+products.map(p=>`<div class="admin-row"><div><b>${safe(p.name)}</b><small>${safe(p.category)} · ${money(p.price)} · ${p.stock==='in'?'موجود':'ناموجود'}</small></div><div class="admin-buttons"><button class="btn small" type="button" onclick="editProduct('${p.id}')">ویرایش</button><button class="btn danger small" type="button" onclick="deleteProduct('${p.id}')">حذف</button></div></div>`).join(''):'<p class="product-meta">هنوز محصولی ذخیره نشده است.</p>';
+}
+function resetForm(){$('productForm').reset();$('editId').value='';$('saveButton').textContent='ذخیره محصول'}
+$('productForm').addEventListener('submit',e=>{
+ e.preventDefault();
+ const id=$('editId').value||String(Date.now())+Math.random().toString(16).slice(2,7);
+ const product={id,name:$('name').value.trim(),price:Number($('price').value),category:$('category').value,image:$('image').value.trim(),sizes:$('sizes').value.trim(),colors:$('colors').value.trim(),stock:$('stock').value,description:$('description').value.trim()};
+ if(!product.name||!Number.isFinite(product.price)||product.price<0){alert('نام و قیمت معتبر را وارد کن.');return}
+ const index=products.findIndex(p=>p.id===id);if(index>=0)products[index]=product;else products.unshift(product);
+ try{saveProducts()}catch(err){alert('ذخیره‌سازی انجام نشد. ممکن است فضای ذخیره مرورگر پر باشد.');return}
+ resetForm();renderProducts();document.querySelector('#products').scrollIntoView({behavior:'smooth'});
+});
+$('resetButton').addEventListener('click',resetForm);
+function editProduct(id){const p=products.find(x=>x.id===id);if(!p)return;$('editId').value=p.id;for(const key of ['name','price','category','image','sizes','colors','stock','description'])$(key).value=p[key]??'';$('saveButton').textContent='ذخیره تغییرات';$('admin').scrollIntoView({behavior:'smooth'})}
+function deleteProduct(id){const p=products.find(x=>x.id===id);if(!p||!confirm('محصول «'+p.name+'» حذف شود؟'))return;products=products.filter(x=>x.id!==id);saveProducts();renderProducts()}
+function showProduct(id){const p=products.find(x=>x.id===id);if(!p)return;$('modalContent').innerHTML=`<h3 id="modalTitle">${safe(p.name)}</h3>${p.image?`<img src="${safe(p.image)}" alt="${safe(p.name)}">`:''}<p><b>${money(p.price)}</b></p><p>${safe(p.description||'توضیحی ثبت نشده است.')}</p><p>دسته: ${safe(p.category)}<br>سایز: ${safe(p.sizes||'ثبت نشده')}<br>رنگ: ${safe(p.colors||'ثبت نشده')}<br>وضعیت: ${p.stock==='in'?'موجود':'ناموجود'}</p><p class="product-meta">خرید آنلاین هنوز فعال نشده است.</p>`;$('productModal').classList.add('open')}
+$('closeModal').addEventListener('click',()=>$('productModal').classList.remove('open'));
+$('productModal').addEventListener('click',e=>{if(e.target===$('productModal'))$('productModal').classList.remove('open')});
+$('productSearch').addEventListener('input',renderProducts);$('categoryFilter').addEventListener('change',renderProducts);$('stockFilter').addEventListener('change',renderProducts);
+$('topSearch').addEventListener('keydown',e=>{if(e.key==='Enter'){$('productSearch').value=e.target.value;renderProducts();$('products').scrollIntoView({behavior:'smooth'})}});
+document.querySelectorAll('[data-category-link]').forEach(a=>a.addEventListener('click',()=>{$('categoryFilter').value=a.dataset.categoryLink;renderProducts()}));
+loadProducts();renderProducts();
+</script>
+</body>
+</html>
